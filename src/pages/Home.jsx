@@ -27,7 +27,7 @@ export default function Home() {
             variant="contained"
             color="primary"
             component={Link}
-            to={`/gallery/${category.slug}`} // Redirects to Gallery with selected category
+            to={`/gallery/${category.slug}`}
             sx={{ m: 1 }}
           >
             {category.name}
