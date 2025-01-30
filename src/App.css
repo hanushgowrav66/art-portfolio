@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.masonry-grid {
+  display: flex;
+  margin-left: -16px; /* Adjusts spacing */
+  width: auto;
+}
+
+.masonry-column {
+  padding-left: 16px; /* Space between columns */
+  background-clip: padding-box;
+}
+
+.masonry-column > a {
+  margin-bottom: 16px; /* Space between images */
+}
