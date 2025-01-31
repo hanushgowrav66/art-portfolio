@@ -1,39 +1,36 @@
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-
+import { Grid, Container, Typography } from "@mui/material";
 const categories = [
   { name: "All Mixed", slug: "all" },
   { name: "Paint", slug: "paint" },
   { name: "Pencil Sketch", slug: "pencil-sketch" },
   { name: "Digital Art", slug: "digital-art" },
 ];
+import "../styles.css";
 
 export default function Home() {
   return (
-    <Box sx={{ textAlign: "center", p: 4 }}>
-      <h1 className="text-3xl font-bold mb-6">Categories</h1>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          gap: 2,
-          flexWrap: "wrap",
-        }}
-      >
-        {categories.map((category) => (
-          <Button
-            key={category.slug}
-            variant="contained"
-            color="primary"
-            component={Link}
-            to={`/gallery/${category.slug}`}
-            sx={{ m: 1 }}
-          >
-            {category.name}
-          </Button>
-        ))}
+    <Container maxWidth="md">
+      <Box sx={{ textAlign: "center", p: 4 }}>
+        <h2 className="gallery-title">Categories</h2>
+        <br></br>
+        <br></br>
+        <Grid container spacing={4} className="categories-grid">
+          {categories.map((category) => (
+            <Grid item xs={6} sm={6} md={6} key={category.slug}>
+              <Link
+                to={`/gallery/${category.slug}`}
+                className="category-box"
+                style={{ backgroundColor: "#127780" }}
+              >
+                <Typography variant="h4">{category.name}</Typography>
+              </Link>
+            </Grid>
+          ))}
+        </Grid>
       </Box>
-    </Box>
+    </Container>
   );
 }

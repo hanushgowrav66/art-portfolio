@@ -5,9 +5,10 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import ImageListItemBar from "@mui/material/ImageListItemBar";
 import { Link } from "react-router-dom";
+import "../styles.css";
 
 export default function Gallery() {
-  const { category } = useParams(); // Get category from URL
+  const { category } = useParams();
   const [artworks, setArtworks] = useState([]);
 
   useEffect(() => {
@@ -17,7 +18,7 @@ export default function Gallery() {
         if (category && category !== "all") {
           setArtworks(data.filter((art) => art.category === category));
         } else {
-          setArtworks(data); // Show all artworks for "All Mixed"
+          setArtworks(data);
         }
       })
       .catch((error) => console.error("Error loading artworks:", error));
@@ -25,13 +26,20 @@ export default function Gallery() {
 
   return (
     <Box sx={{ width: "100%", margin: "auto", minHeight: 500 }}>
-      <h2 className="text-3xl font-bold text-center mb-4">
-        {category ? category.replace("-", " ").toUpperCase() : "GALLERY"}
+      <h2 className="gallery-title">
+        {category
+          ? category
+              .replace("-", " ")
+              .replace(/\b\w/g, (char) => char.toUpperCase())
+          : "Gallery"}
       </h2>
-      <ImageList variant="masonry" cols={3} gap={8}>
+      <ImageList variant="masonry" cols={3} gap={20}>
         {artworks.map((art) => (
           <ImageListItem key={art.id}>
-            <Link to={`/artwork/${art.id}`} style={{ textDecoration: "none" }}>
+            <Link
+              to={`/artwork/${art.id}`}
+              style={{ textDecoration: "none", color: "red" }}
+            >
               <img
                 srcSet={`${art.imageUrl}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 src={`${art.imageUrl}?w=248&fit=crop&auto=format`}

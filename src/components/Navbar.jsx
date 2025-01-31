@@ -13,6 +13,7 @@ import {
   Box,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import "../styles.css";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -61,27 +62,35 @@ export default function Navbar() {
         anchor="right"
         open={mobileOpen}
         onClose={handleDrawerToggle}
-        sx={{ display: { xs: "block", md: "none" } }}
+        className="mobile-drawer"
       >
         <List sx={{ width: 250 }}>
-          <ListItem button component={Link} to="/" onClick={handleDrawerToggle}>
-            <ListItemText primary="Home" />
+          <ListItem
+            button
+            component={Link}
+            to="/"
+            onClick={handleDrawerToggle}
+            className="MuiListItem-button"
+          >
+            <ListItemText primary="Home" className="MuiListItemText-root" />
           </ListItem>
           <ListItem
             button
             component={Link}
             to="/gallery/all"
             onClick={handleDrawerToggle}
+            className="MuiListItem-button"
           >
-            <ListItemText primary="Gallery" />
+            <ListItemText primary="Gallery" className="MuiListItemText-root" />
           </ListItem>
           <ListItem
             button
             component={Link}
             to="/contact"
             onClick={handleDrawerToggle}
+            className="MuiListItem-button"
           >
-            <ListItemText primary="Contact" />
+            <ListItemText primary="Contact" className="MuiListItemText-root" />
           </ListItem>
         </List>
       </Drawer>
