@@ -170,3 +170,60 @@ body {
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.849);
   margin-bottom: 20px;
 }
+
+/* Image Title Bar Styling */
+.image-title-bar .MuiImageListItemBar-title {
+  text-align: center !important;
+  color: #127780 !important;
+  text-shadow: 2px 2px 4px #fefefe !important;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Footer Styling */
+.footer {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  font-size: 0.9rem;
+  color: #127780;
+  font-weight: bold;
+  opacity: 0.8;
+  background-color: white;
+}
+
+/* Artwork Title */
+.artwork-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #127780; /* Custom color */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.849);
+  margin-bottom: -6px;
+  margin-top: -10px;
+  text-decoration: underline;
+}
+
+/* Artwork Description */
+.artwork-description {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black; /* Black text */
+  margin-bottom: 10px;
+}
+
+/* Contact & Back to Gallery Button */
+.contact-button {
+  padding: 10px;
+  background-color: #127780 !important;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-button:hover {
+  background-color: #2e96a0 !important;
+}

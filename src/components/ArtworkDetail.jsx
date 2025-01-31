@@ -28,22 +28,19 @@ export default function ArtworkDetail() {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        height: "100vh",
         overflow: "hidden",
         textAlign: "center",
-        bgcolor: "background.default",
         p: 3,
       }}
     >
-      <p style={{ marginTop: "10px", fontSize: "25px", fontWeight: "500" }}>
-        {artwork.description}
-      </p>
+      <h2 className="artwork-title">{artwork.title}</h2>
+      <p className="artwork-description">{artwork.description}</p>
       <img
         src={artwork.imageUrl}
         alt={artwork.title}
         style={{
           maxWidth: "90vw",
-          maxHeight: "80vh",
+          maxHeight: "70vh",
           objectFit: "contain",
           borderRadius: "10px",
           boxShadow: "0px 4px 10px rgba(0,0,0,0.3)",
@@ -51,9 +48,9 @@ export default function ArtworkDetail() {
       />
 
       <Button
+        className="contact-button"
         onClick={() => navigate(-1)}
         variant="contained"
-        color="primary"
         sx={{ mt: 2 }}
       >
         Back to Gallery

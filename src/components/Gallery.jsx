@@ -48,7 +48,11 @@ export default function Gallery() {
                 style={{ width: "100%" }}
               />
             </Link>
-            <ImageListItemBar position="below" title={art.title} />
+            <ImageListItemBar
+              position="below"
+              title={art.title}
+              className="image-title-bar"
+            />
             <br />
           </ImageListItem>
         ))}
