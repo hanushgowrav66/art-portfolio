@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Gallery from "./components/Gallery";
 import ArtworkDetail from "./components/ArtworkDetail";
-import UploadForm from "./components/UploadForm";
+import Contact from "./components/Contact";
 import TitlebarBelowMasonryImageList from "./components/TitlebarBelowMasonryImageList";
 
 export default function App() {
@@ -15,7 +15,7 @@ export default function App() {
         <Route path="/gallery/:category" element={<Gallery />} />
         <Route path="/title" element={<TitlebarBelowMasonryImageList />} />
         <Route path="/artwork/:id" element={<ArtworkDetail />} />
-        <Route path="/upload" element={<UploadForm />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
