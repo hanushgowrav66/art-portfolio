@@ -1,3 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply global styles */
+body {
+  font-family: sans-serif !important;
+}
 .masonry-column {
   background-clip: padding-box;
 }

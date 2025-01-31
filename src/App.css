@@ -16,3 +16,8 @@
 .masonry-column > a {
   margin-bottom: 16px; /* Space between images */
 }
+
+/* Apply global styles */
+body {
+  font-family: sans-serif;
+}
