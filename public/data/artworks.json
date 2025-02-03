@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Serene Mountain Reflections",
-    "imageUrl": "./assets/digital/1.png",
+    "imageUrl": "/assets/digital/1.png",
     "category": "digital-art",
     "description": "A tranquil mountain landscape with lush trees and a reflective lake."
   },
