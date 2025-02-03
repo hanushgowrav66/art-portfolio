@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Serene Mountain Reflections",
-    "imageUrl": "https://drive.google.com/uc?export=view&id=1L2qj004zS1TNDNPnxQVf5ZDWHop1Ja9o",
+    "imageUrl": "/art-portfolio/assets/digital/1.png",
     "category": "digital-art",
     "description": "A tranquil mountain landscape with lush trees and a reflective lake."
   },
@@ -16,154 +16,154 @@
   {
     "id": 3,
     "title": "Dwarkadhisha",
-    "imageUrl": "/assets/digital/3.png",
+    "imageUrl": "/art-portfolio/assets/digital/3.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 4,
     "title": "Jagannatha",
-    "imageUrl": "/assets/digital/4.png",
+    "imageUrl": "/art-portfolio/assets/digital/4.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 5,
     "title": "Eka Rekha Krishna",
-    "imageUrl": "/assets/digital/5.png",
+    "imageUrl": "/art-portfolio/assets/digital/5.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 6,
     "title": "Ambegaalu Krishna",
-    "imageUrl": "/assets/digital/6.png",
+    "imageUrl": "/art-portfolio/assets/digital/6.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 7,
     "title": "Eka Rekha Krishna",
-    "imageUrl": "/assets/digital/7.png",
+    "imageUrl": "/art-portfolio/assets/digital/7.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 8,
     "title": "Govinda",
-    "imageUrl": "/assets/digital/8.png",
+    "imageUrl": "/art-portfolio/assets/digital/8.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 9,
     "title": "Krishna",
-    "imageUrl": "/assets/digital/9.png",
+    "imageUrl": "/art-portfolio/assets/digital/9.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 10,
     "title": "Abstract",
-    "imageUrl": "/assets/digital/10.png",
+    "imageUrl": "/art-portfolio/assets/digital/10.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 11,
     "title": "Lord Vishnu",
-    "imageUrl": "/assets/digital/11.png",
+    "imageUrl": "/art-portfolio/assets/digital/11.png",
     "category": "digital-art",
     "description": "A powerful depiction of a multi-armed Vishnu, holding celestial weapons, symbolizing strength, protection, and divine energy."
   },
   {
     "id": 12,
     "title": "Abstract Krishna",
-    "imageUrl": "/assets/digital/12.png",
+    "imageUrl": "/art-portfolio/assets/digital/12.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 13,
     "title": "Udupi Krishna",
-    "imageUrl": "/assets/digital/13.png",
+    "imageUrl": "/art-portfolio/assets/digital/13.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 14,
     "title": "Hanuman",
-    "imageUrl": "/assets/digital/14.png",
+    "imageUrl": "/art-portfolio/assets/digital/14.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 15,
     "title": "Radha Krishna",
-    "imageUrl": "/assets/digital/15.png",
+    "imageUrl": "/art-portfolio/assets/digital/15.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 16,
     "title": "Gopala",
-    "imageUrl": "/assets/digital/16.png",
+    "imageUrl": "/art-portfolio/assets/digital/16.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 17,
     "title": "Peacock Feather Abstract",
-    "imageUrl": "/assets/digital/17.png",
+    "imageUrl": "/art-portfolio/assets/digital/17.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 18,
     "title": "Hanuman",
-    "imageUrl": "/assets/digital/18.png",
+    "imageUrl": "/art-portfolio/assets/digital/18.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 19,
     "title": "Krishna in Fire",
-    "imageUrl": "/assets/digital/19.png",
+    "imageUrl": "/art-portfolio/assets/digital/19.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 20,
     "title": "Light Beyond the Frame",
-    "imageUrl": "/assets/digital/20.png",
+    "imageUrl": "/art-portfolio/assets/digital/20.png",
     "category": "digital-art",
     "description": "A surreal black-and-white artwork depicting a cyclist emerging from a framed world, guided by a glowing yellow light, symbolizing hope and direction in the darkness."
   },
   {
     "id": 21,
     "title": "The Question of Light",
-    "imageUrl": "/assets/digital/21.png",
+    "imageUrl": "/art-portfolio/assets/digital/21.png",
     "category": "digital-art",
     "description": "A creative fusion of a glowing question mark within a light bulb, symbolizing curiosity, ideas, and the quest for knowledge."
   },
   {
     "id": 22,
     "title": "F.R.I.E.N.D.S",
-    "imageUrl": "/assets/digital/22.png",
+    "imageUrl": "/art-portfolio/assets/digital/22.png",
     "category": "digital-art",
     "description": "The One with the Pondicherry Trip"
   },
   {
     "id": 23,
     "title": "Krishna",
-    "imageUrl": "/assets/digital/23.png",
+    "imageUrl": "/art-portfolio/assets/digital/23.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 24,
     "title": "Moon in the Moon",
-    "imageUrl": "/assets/digital/24.png",
+    "imageUrl": "/art-portfolio/assets/digital/24.png",
     "category": "digital-art",
     "description": "The moon’s phases, from full moon to new moon, symbolizing time, change, and imagination."
   }
