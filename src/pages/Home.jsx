@@ -3,10 +3,10 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Grid, Container, Typography } from "@mui/material";
 const categories = [
-  { name: "All Mixed", slug: "all" },
   { name: "Paint", slug: "paint" },
   { name: "Pencil Sketch", slug: "pencil-sketch" },
   { name: "Digital Art", slug: "digital-art" },
+  { name: "All Mixed", slug: "all" },
 ];
 import "../styles.css";
 
