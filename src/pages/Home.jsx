@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import { Grid, Container, Typography } from "@mui/material";
 const categories = [
   { name: "Paint", slug: "paint" },

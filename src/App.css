@@ -1,23 +1,22 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities; */
 
 .masonry-grid {
   display: flex;
-  margin-left: -16px; /* Adjusts spacing */
+  margin-left: -16px;
   width: auto;
 }
 
 .masonry-column {
-  padding-left: 16px; /* Space between columns */
+  padding-left: 16px;
   background-clip: padding-box;
 }
 
 .masonry-column > a {
-  margin-bottom: 16px; /* Space between images */
+  margin-bottom: 16px;
 }
 
-/* Apply global styles */
 body {
   font-family: sans-serif;
 }

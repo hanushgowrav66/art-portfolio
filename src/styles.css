@@ -70,7 +70,7 @@ body {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 15px; /* This adds spacing between fields */
+  gap: 15px;
 }
 
 .contact-form input,
@@ -132,7 +132,6 @@ body {
 /* Title */
 .categories-title {
   font-weight: bold;
-  /* margin-bottom: 20px; */
   color: #127780;
 }
 
@@ -166,7 +165,7 @@ body {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  color: #127780; /* Custom color */
+  color: #127780;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.849);
   margin-bottom: 20px;
 }
@@ -197,7 +196,7 @@ body {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  color: #127780; /* Custom color */
+  color: #127780;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.849);
   margin-bottom: -6px;
   margin-top: -10px;
@@ -209,7 +208,7 @@ body {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 500;
-  color: black; /* Black text */
+  color: black;
   margin-bottom: 10px;
 }
 
