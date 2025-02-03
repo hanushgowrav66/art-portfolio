@@ -9,14 +9,14 @@
   {
     "id": 2,
     "title": "Narayana",
-    "imageUrl": "/assets/digital/2.png",
+    "imageUrl": "assets/digital/2.png",
     "category": "digital-art",
     "description": ""
   },
   {
     "id": 3,
     "title": "Dwarkadhisha",
-    "imageUrl": "./assets/digital/3.png",
+    "imageUrl": "assets/digital/3.png",
     "category": "digital-art",
     "description": ""
   },
