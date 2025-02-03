@@ -12,7 +12,7 @@ export default function Gallery() {
   const [artworks, setArtworks] = useState([]);
 
   useEffect(() => {
-    fetch("/data/artworks.json")
+    fetch("/art-portfolio/data/artworks.json")
       .then((response) => response.json())
       .then((data) => {
         if (category && category !== "all") {

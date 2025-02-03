@@ -9,7 +9,7 @@ export default function ArtworkDetail() {
   const [artwork, setArtwork] = useState(null);
 
   useEffect(() => {
-    fetch("/data/artworks.json")
+    fetch("/art-portfolio/data/artworks.json")
       .then((response) => response.json())
       .then((data) => {
         const foundArtwork = data.find((art) => art.id === parseInt(id));
