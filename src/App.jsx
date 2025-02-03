@@ -8,7 +8,7 @@ import Footer from "./components/Footer";
 export default function App() {
   return (
     <>
-      <Router>
+      <Router basename="/art-portfolio">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
