@@ -23,15 +23,15 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="sticky" sx={{ bgcolor: "#127780", boxShadow: 3 }}>
+    <AppBar position="sticky" sx={{ bgcolor: "white", boxShadow: 3 }}>
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <Typography
-          variant="h6"
+          // variant="h6"
           component={Link}
           to="/"
           className="navbar-logo"
         >
-          Gowrav Arts
+          Gowrav Arts <span>Gallery</span>
         </Typography>
 
         <Box className="navbar-links">
@@ -48,7 +48,7 @@ export default function Navbar() {
 
         <IconButton
           edge="end"
-          color="inherit"
+          color="black"
           aria-label="menu"
           onClick={handleDrawerToggle}
           className="menu-icon"

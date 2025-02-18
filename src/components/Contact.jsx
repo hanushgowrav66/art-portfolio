@@ -8,7 +8,6 @@ import {
   Button,
 } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
-import PhoneIcon from "@mui/icons-material/Phone";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import LanguageIcon from "@mui/icons-material/Language";
@@ -50,7 +49,7 @@ export default function Contact() {
 
   return (
     <Container maxWidth="sm" className="contact-container">
-      <Typography variant="h3" fontWeight="bold">
+      <Typography variant="h3" fontWeight="bold" className="gallery-title">
         Contact Me
       </Typography>
       {/* Contact Form */}

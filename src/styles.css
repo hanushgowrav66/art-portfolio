@@ -1,40 +1,47 @@
 /* Global Styles */
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Arial", sans-serif !important;
   margin: 0;
   padding: 0;
 }
 
 /* Navbar */
 .navbar-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700 !important;
+  font-size: 25px !important;
   text-decoration: none;
-  color: #e5f7f8;
+  color: #127780;
+}
+.navbar-logo span {
+  color: black;
 }
 .navbar-logo:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  color: white;
+  color: #127780;
   border-radius: 5px;
+  transform: scale(1.05);
 }
 
+/* Navbar Links */
 .navbar-links {
   display: flex;
-  text-transform: none;
   gap: 20px;
 }
 
-.navbar-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
+/* Ensure buttons keep normal capitalization */
+.navbar-links .MuiButton-root {
+  text-transform: none !important;
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  color: black !important;
   padding: 10px 15px;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
-.navbar-links a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 5px;
+/* Hover Effect */
+.navbar-links .MuiButton-root:hover {
+  font-size: 22px !important;
+  color: #127780 !important;
 }
 
 /* Mobile Menu */
@@ -107,11 +114,11 @@ body {
 }
 
 .mobile-drawer .MuiDrawer-paper {
-  background-color: #b9dee4 !important;
+  background-color: #ffffff !important;
 }
 
 .mobile-drawer .MuiListItemText-root {
-  color: #0e5d66;
+  color: Black;
   text-align: center;
 }
 
@@ -123,50 +130,13 @@ body {
   color: white !important;
 }
 
-/* Home Page */
-.home-container {
-  text-align: center;
-  padding: 10px;
-}
-
-/* Title */
-.categories-title {
-  font-weight: bold;
-  color: #127780;
-}
-
-/* Grid Layout */
-.categories-grid {
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.category-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 125px;
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-  transition: 0.3s;
-  border-radius: 15px;
-  padding: 40px;
-}
-
-.category-box:hover {
-  opacity: 0.8;
-}
-
 /* Gallery Title Styling */
 .gallery-title {
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
   color: #127780;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.849);
+  text-shadow: 2px 2px 4px #b6e0e6;
   margin-bottom: 20px;
 }
 
@@ -225,4 +195,89 @@ body {
 
 .contact-button:hover {
   background-color: #2e96a0 !important;
+}
+
+/* Profile Image */
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 100%;
+  margin-top: 50px;
+  max-width: 475px; /* Keep size */
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(20, 119, 128, 0.9);
+  transition: transform 0.2s ease-out; /* Smooth animation */
+  transform-origin: center;
+}
+
+/* Hover Effect */
+.profile-image:hover {
+  opacity: 0.985;
+  box-shadow: 5px 5px 15px rgb(20, 119, 128);
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 768px) {
+  .profile-image {
+    max-width: 250px; /* Reduce size for smaller screens */
+  }
+}
+
+/* Home Page */
+.home-container {
+  text-align: center;
+  padding: 15px;
+}
+
+/* Title */
+.categories-title {
+  font-weight: bold;
+  color: white;
+}
+
+/* Grid Layout */
+.categories-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  text-decoration: none;
+  color: #127780;
+  font-weight: bold;
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 40px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 2px 2px 10px rgba(20, 119, 128, 0.9);
+}
+
+.category-box:hover {
+  opacity: 0.9;
+  transform: scale(1.08);
+  box-shadow: 5px 5px 15px rgb(20, 119, 128);
+  color: white;
+  background-color: #127780 !important;
+}
+
+.galimg {
+  transition: 0.3s;
+  box-shadow: 2px 2px 10px rgba(20, 119, 128, 0.9);
+}
+
+.galimg:hover {
+  opacity: 0.989;
+  transform: scale(1.03);
+  box-shadow: 5px 5px 15px rgb(20, 119, 128);
 }

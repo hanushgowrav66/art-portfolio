@@ -41,6 +41,7 @@ export default function Gallery() {
               style={{ textDecoration: "none", color: "red" }}
             >
               <img
+                className="galimg"
                 srcSet={`${art.imageUrl}?w=248&fit=crop&auto=format&dpr=2 2x`}
                 src={`${art.imageUrl}?w=248&fit=crop&auto=format`}
                 alt={art.title}
