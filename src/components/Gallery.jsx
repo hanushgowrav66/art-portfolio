@@ -33,31 +33,36 @@ export default function Gallery() {
               .replace(/\b\w/g, (char) => char.toUpperCase())
           : "Gallery"}
       </h2>
-      <ImageList variant="masonry" cols={3} gap={20}>
-        {artworks.map((art) => (
-          <ImageListItem key={art.id}>
-            <Link
-              to={`/artwork/${art.id}`}
-              style={{ textDecoration: "none", color: "red" }}
-            >
-              <img
-                className="galimg"
-                srcSet={`${art.imageUrl}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                src={`${art.imageUrl}?w=248&fit=crop&auto=format`}
-                alt={art.title}
-                loading="lazy"
-                style={{ width: "100%" }}
+      <div className="gallery-div">
+        <ImageList
+          variant="masonry"
+          cols={3}
+          gap={20}
+          className="responsive-gallery"
+        >
+          {artworks.map((art) => (
+            <ImageListItem key={art.id}>
+              <Link
+                to={`/artwork/${art.id}`}
+                style={{ textDecoration: "none" }}
+              >
+                <img
+                  className="galimg"
+                  src={`${art.imageUrl}`}
+                  alt={art.title}
+                  style={{ width: "100%", borderRadius: "10px" }}
+                />
+              </Link>
+              <ImageListItemBar
+                position="below"
+                title={art.title}
+                className="image-title-bar"
               />
-            </Link>
-            <ImageListItemBar
-              position="below"
-              title={art.title}
-              className="image-title-bar"
-            />
-            <br />
-          </ImageListItem>
-        ))}
-      </ImageList>
+              <br />
+            </ImageListItem>
+          ))}
+        </ImageList>
+      </div>
     </Box>
   );
 }

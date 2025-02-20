@@ -6,7 +6,7 @@ const categories = [
   { name: "Paint", slug: "paint" },
   { name: "Pencil Sketch", slug: "pencil-sketch" },
   { name: "Digital Art", slug: "digital-art" },
-  { name: "All Mixed", slug: "all" },
+  { name: "All", slug: "all" },
 ];
 import "../styles.css";
 
@@ -15,7 +15,7 @@ export default function Home() {
 
   const handleMouseMove = (e) => {
     const { left, top, width, height } = e.target.getBoundingClientRect();
-    const x = ((e.clientX - left) / width - 0.5) * 10; // Scale movement
+    const x = ((e.clientX - left) / width - 0.5) * 10;
     const y = ((e.clientY - top) / height - 0.5) * 10;
 
     setTransformStyle({
@@ -34,7 +34,7 @@ export default function Home() {
         {/* Left Side - Profile Image */}
         <Grid item xs={12} md={6} className="profile-image-container">
           <img
-            src="/art-portfolio/public/artprofile.jpg"
+            src={`${import.meta.env.BASE_URL}artprofile.jpg`}
             alt="My Profile"
             className="profile-image"
             style={transformStyle}
@@ -53,10 +53,12 @@ export default function Home() {
                 <Grid item xs={6} key={category.slug}>
                   <Link
                     to={`/gallery/${category.slug}`}
-                    className="category-box"
+                    className={`category-box ${category.slug}`}
                     style={{ backgroundColor: "white" }}
                   >
-                    <Typography variant="h4">{category.name}</Typography>
+                    <Typography variant="h5" className="category-box-text">
+                      {category.name}
+                    </Typography>
                   </Link>
                 </Grid>
               ))}

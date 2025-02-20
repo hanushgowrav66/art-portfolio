@@ -83,7 +83,6 @@ export default function Contact() {
           Send Message
         </Button>
       </Box>
-      {/* Social Icons */}
       <Box className="contact-icons">
         <IconButton
           component="a"

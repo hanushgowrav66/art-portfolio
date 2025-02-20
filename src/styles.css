@@ -85,7 +85,7 @@ body {
   width: 100%;
   padding: 12px;
   border-radius: 5px;
-  border: 2px solid #ccc;
+  border: 1px solid #127780;
   font-size: 16px;
 }
 
@@ -137,6 +137,7 @@ body {
   font-weight: bold;
   color: #127780;
   text-shadow: 2px 2px 4px #b6e0e6;
+
   margin-bottom: 20px;
 }
 
@@ -253,7 +254,8 @@ body {
   justify-content: center;
   height: 125px;
   text-decoration: none;
-  color: #127780;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #000, 4px 4px 0 #444;
   font-weight: bold;
   transition: 0.3s;
   border-radius: 5px;
@@ -264,11 +266,49 @@ body {
 }
 
 .category-box:hover {
-  opacity: 0.9;
   transform: scale(1.08);
   box-shadow: 5px 5px 15px rgb(20, 119, 128);
+  text-shadow: 2px 2px 0 #000, 4px 4px 0 #444;
   color: white;
-  background-color: #127780 !important;
+}
+.category-box.pencil-sketch {
+  background-image: url("/pencil.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.category-box.paint {
+  background-image: url("/all.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.category-box.digital-art {
+  background-image: url("/digital.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.category-box.all {
+  background-image: url("/paint.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.category-box:hover {
+  opacity: 1;
+}
+.category-box-text {
+  font-weight: 580 !important;
+  font-size: 35px !important;
 }
 
 .galimg {
@@ -280,4 +320,35 @@ body {
   opacity: 0.989;
   transform: scale(1.03);
   box-shadow: 5px 5px 15px rgb(20, 119, 128);
+}
+
+.gallery-div {
+  margin: 15px;
+}
+.responsive-gallery {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+@media (max-width: 1200px) {
+  .responsive-gallery {
+    column-count: 2 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-gallery {
+    column-count: 1 !important;
+  }
+}
+
+.galimg {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.galimg:hover {
+  transform: scale(1.02);
 }
